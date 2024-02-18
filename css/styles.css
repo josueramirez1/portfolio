@@ -400,14 +400,28 @@ footer.show {
   #section-project .container.grid.grid--3-cols {
     grid-template-columns: 1fr 1fr;
   }
+
+  .logo.name,
+  .nav-items {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 32em) {
+  html {
+    font-size: 48.5%;
+  }
+
   .profile {
     width: 65%;
   }
 
   #section-project .container.grid.grid--3-cols {
     grid-template-columns: 1fr;
+  }
+
+  .logo-name,
+  .nav-item {
+    font-size: 1.8rem;
   }
 }
