@@ -335,8 +335,26 @@ footer.show {
 }
 
 @media (max-width: 110em) {
+  html {
+    font-size: 60%;
+  }
+
+  .profile {
+    width: 35%;
+  }
+
   .intro-paragraph {
-    font-size: 3.4rem;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 80rem) {
+  html {
+    font-size: 58%;
+  }
+
+  .intro-paragraph {
+    font-size: 2.8rem;
   }
 }
 
@@ -349,6 +367,10 @@ footer.show {
     gap: 1.6rem;
   }
 
+  .profile {
+    width: 42%;
+  }
+
   .logo-name {
     font-size: 2.6rem;
   }
@@ -358,17 +380,17 @@ footer.show {
   }
 
   .intro-paragraph {
-    font-size: 3.2rem;
-  }
-
-  .intro-paragraph {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 }
 
 @media (max-width: 45em) {
   html {
     font-size: 50%;
+  }
+
+  .profile {
+    width: 45%;
   }
 
   .contact-container {
@@ -381,6 +403,10 @@ footer.show {
 }
 
 @media (max-width: 32em) {
+  .profile {
+    width: 65%;
+  }
+
   #section-project .container.grid.grid--3-cols {
     grid-template-columns: 1fr;
   }
