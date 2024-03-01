@@ -77,6 +77,10 @@
     width: 67%;
   }
 
+  .portfolio-box {
+    height: 38rem;
+  }
+
   .logo-name {
     font-size: 1.8rem;
   }
@@ -86,7 +90,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   html {
     font-size: 50%;
   }
@@ -120,7 +124,7 @@
   }
 
   #section-project .container.grid.grid--3-cols {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .portfolio-text {
@@ -128,7 +132,7 @@
   }
 
   .portfolio-box {
-    height: 32rem;
+    height: 36rem;
     font-size: 1.4rem;
   }
 
