@@ -1,0 +1,187 @@
+@media (min-width: 1800px) {
+  .profile {
+    width: 18%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+
+  .profile {
+    width: 40%;
+  }
+}
+@media (max-width: 965px) {
+  html {
+    font-size: 58%;
+  }
+
+  .profile {
+    width: 42%;
+  }
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 58%;
+  }
+
+  .profile {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .profile {
+    width: 55%;
+  }
+
+  #section-project .container.grid.grid--3-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .logo-name {
+    font-size: 2.6rem;
+  }
+
+  .nav-item {
+    font-size: 2.4rem;
+  }
+
+  .intro-paragraph {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .logo-name {
+    font-size: 2rem;
+  }
+
+  .navigation {
+    justify-content: center;
+  }
+
+  .nav-item {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .profile {
+    width: 67%;
+  }
+
+  .logo-name {
+    font-size: 1.8rem;
+  }
+
+  .nav-item {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 50%;
+  }
+
+  .navigation {
+    height: 0;
+    padding-top: 18rem;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .nav-items {
+    flex-direction: column;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .profile {
+    width: 80%;
+  }
+
+  .about {
+    margin-top: 12rem;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  #section-project .container.grid.grid--3-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portfolio-text {
+    padding: 1.4rem;
+  }
+
+  .portfolio-box {
+    height: 32rem;
+    font-size: 1.4rem;
+  }
+
+  .logo-name {
+    font-size: 2rem;
+  }
+
+  .nav-item {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 48.5%;
+  }
+
+  .profile {
+    width: 100%;
+  }
+
+  .about {
+    padding-top: 12rem;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .navigation {
+    height: 0;
+    padding-top: 18rem;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .nav-items {
+    flex-direction: column;
+  }
+
+  .logo-name {
+    font-size: 2rem;
+  }
+
+  .nav-item {
+    font-size: 1.8rem;
+  }
+
+  .profile {
+    width: 65%;
+  }
+
+  #section-project .container.grid.grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+}

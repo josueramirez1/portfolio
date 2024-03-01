@@ -84,3 +84,23 @@
   background-color: #27374d;
   color: #dde6ed;
 }
+
+.bg-grey {
+  background-color: #e6e6e6;
+}
+
+.py-10 {
+  padding: 1rem;
+}
+
+.py-20 {
+  padding: 2rem;
+}
+
+.py-30 {
+  padding: 3rem;
+}
+
+.py-60 {
+  padding: 6rem;
+}
