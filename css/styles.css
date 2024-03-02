@@ -82,6 +82,7 @@ body {
   align-items: center;
   height: 9.6rem;
   margin: 0 9.6rem;
+
   background-color: #e6e6e6;
   color: #27374d;
 }
@@ -120,8 +121,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  margin-top: 6rem;
 }
 
 .profile {
