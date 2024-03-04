@@ -13,12 +13,16 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/queries.css" />
+    <script
+      src="https://kit.fontawesome.com/852a4f6fd4.js"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="script.js"></script>
     <title>Josue Ramirez - Portfolio Website</title>
   </head>
   <body>
     <header id="header" class="bg-grey">
-      <div class="navigation">
+      <div class="top-header">
         <div class="logo">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +40,7 @@
           </svg>
           <h1 class="logo-name">Josue Ramirez</h1>
         </div>
-        <nav>
+        <nav class="navigation">
           <ul class="nav-items">
             <li>
               <a class="btn nav-item" target="_blank" href="resume.pdf"
@@ -51,6 +55,10 @@
             </li>
           </ul>
         </nav>
+        <button class="btn-mobile-nav">
+          <i class="icon-mobile-nav fa-solid fa-bars fa-2x"></i>
+          <i class="icon-mobile-nav fa-solid fa-xmark fa-2x"></i>
+        </button>
       </div>
       <div class="about py-60">
         <img class="profile" src="images/profile.jpeg" alt="" />
