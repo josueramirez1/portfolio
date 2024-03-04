@@ -137,13 +137,13 @@
     font-size: 50%;
   }
 
-  .navigation {
+  /* .navigation {
     height: 0;
     padding-top: 18rem;
     justify-content: center;
     flex-direction: column;
     gap: 2rem;
-  }
+  } */
 
   .icon {
     display: none;
@@ -191,13 +191,13 @@
     display: none;
   }
 
-  .navigation {
+  /* .navigation {
     height: 0;
     padding-top: 18rem;
     justify-content: center;
     flex-direction: column;
     gap: 2rem;
-  }
+  } */
 
   .nav-items {
     flex-direction: column;
