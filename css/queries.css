@@ -9,10 +9,6 @@
     font-size: 60%;
   }
 
-  .about {
-    margin-top: 10rem;
-  }
-
   .profile {
     width: 40%;
   }
@@ -97,8 +93,8 @@
     width: 48%;
   }
 
-  .about {
-    margin-top: 8rem;
+  #section-project .container.grid.grid--3-cols {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -109,10 +105,6 @@
 
   .profile {
     width: 55%;
-  }
-
-  #section-project .container.grid.grid--3-cols {
-    grid-template-columns: 1fr 1fr;
   }
 
   .intro-paragraph {
@@ -133,6 +125,10 @@
 
   .portfolio-box {
     height: 38rem;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -155,14 +151,6 @@
 
   .profile {
     width: 80%;
-  }
-
-  .about {
-    margin-top: 12rem;
-  }
-
-  .contact-container {
-    grid-template-columns: 1fr;
   }
 
   #section-project .container.grid.grid--3-cols {
@@ -227,10 +215,6 @@
 
   .intro-paragraph {
     font-size: 2.2rem;
-  }
-
-  .about {
-    margin-top: 0;
   }
 
   .py-60 {
