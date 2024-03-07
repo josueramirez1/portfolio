@@ -116,6 +116,10 @@
   .navigation {
     justify-content: center;
   }
+
+  #section-project .container.grid.grid--3-cols {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 560px) {
