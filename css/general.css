@@ -1,7 +1,6 @@
 html {
   /* Overflow all the elements that overflow the viewport are hidden */
   overflow-x: hidden;
-  scroll-behavior: smooth;
   max-width: 100%;
 }
 

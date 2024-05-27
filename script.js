@@ -25,18 +25,18 @@ const sticky = new IntersectionObserver(
 
 // Scrolling
 
-// const scroll = new IntersectionObserver(
-//   (entries) => {
-//     for (let entry of entries) {
-//       entry.target.classList.toggle("show", entry.isIntersecting);
-//     }
-//   },
-//   {
-//     threshold: 0,
-//     root: null,
-//     rootMargin: "-40px",
-//   }
-// );
+const scroll = new IntersectionObserver(
+  (entries) => {
+    for (let entry of entries) {
+      entry.target.classList.toggle("show", entry.isIntersecting);
+    }
+  },
+  {
+    threshold: 0,
+    root: null,
+    rootMargin: "-40px",
+  }
+);
 
 // Navigation menu
 

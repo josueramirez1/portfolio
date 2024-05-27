@@ -29,6 +29,7 @@
 
   html {
     font-size: 58%;
+    overflow-x: hidden;
   }
 
   .navigation {
@@ -58,7 +59,7 @@
   .btn-mobile-nav {
     display: block;
     padding: 0 2rem;
-    z-index: 1000;
+    z-index: 9999;
   }
 
   .nav-open .navigation {
@@ -69,7 +70,7 @@
   }
 
   .nav-open .icon-mobile-nav.fa-xmark {
-    display: block;
+    display: inline;
   }
   .nav-open .icon-mobile-nav.fa-bars {
     display: none;
