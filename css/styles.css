@@ -338,15 +338,15 @@ button:focus {
   font-size: 1.4rem;
 }
 
-section,
+/* section,
 header,
 footer {
   opacity: 0;
   transition: 0.8s;
-}
+} */
 
-section.show,
+/* section.show,
 header.show,
 footer.show {
   opacity: 1;
-}
+} */
