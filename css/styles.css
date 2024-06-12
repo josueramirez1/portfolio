@@ -1,4 +1,4 @@
-/* 
+/*
 ---- 01 TYPOGRAPHY
 
 FONT SIZE SYSTEM (px)
@@ -12,8 +12,8 @@ Bold: 700
 
 LINE HEIGHTS:
 Default: 1
-Small: 
-Medium: 
+Small:
+Medium:
 Paragraph Default: 1.6rem
 
 Letter spacing
@@ -24,7 +24,7 @@ Letter spacing
 PRIMARY: #fff #000 #27374D #DDE6ED #e6e6e6
 
 
-TINTS: #526D82 #9DB2BF 
+TINTS: #526D82 #9DB2BF
 
 SHADES:
 ACCENTS:
@@ -172,6 +172,19 @@ body {
   line-height: 1.6;
 }
 
+/* Tech stack section */
+.section-tech-stack {
+  background-color: #27374d;
+  padding: 9rem 0;
+}
+
+.section-tech-stack h2 {
+  color: #e6e6e6;
+}
+
+.stack {
+  text-align: center;
+}
 /* Project */
 
 #section-project {
