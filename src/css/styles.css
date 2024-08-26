@@ -286,7 +286,7 @@ body {
       hsla(231, 54%, 97%, 0.52),
       hsl(215, 33%, 23%)
     ),
-    url(/images/script.jpg);
+    url(../img/script.jpg);
 
   background-size: cover;
   background-position: center;
