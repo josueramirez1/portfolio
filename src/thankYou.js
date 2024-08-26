@@ -1,6 +1,6 @@
 //Thank you HTML page
 
-export default function successPage() {
+function successPage() {
   const redirect = "index.html";
 
   let count = 6;
