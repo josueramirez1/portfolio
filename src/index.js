@@ -5,4 +5,4 @@ import "./css/general.css";
 import "./css/queries.css";
 
 items();
-successPage();
+// successPage();
