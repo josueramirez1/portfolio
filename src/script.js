@@ -1,12 +1,19 @@
 import "./css/styles.css";
 import "./css/general.css";
 import "./css/queries.css";
+import pdf from "./resume2.pdf";
+
+console.log(pdf);
 
 const sections = document.querySelectorAll("section, header, footer");
 const navItems = document.querySelector(".nav-items");
 const header = document.querySelector("#header");
 const aboutSection = document.querySelector(".about");
 const navBtn = document.querySelector(".btn-mobile-nav");
+const navItem = document.querySelector(".nav-item");
+
+// load pdf as link
+navItem.setAttribute("href", pdf);
 
 // Sticky navigation
 const sticky = new IntersectionObserver(
