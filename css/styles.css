@@ -112,7 +112,8 @@
       padding-block: 20px;
     }
 
-    .topnav__hamburger {
+    .topnav__hamburger,
+    .topnav__close {
       display: none;
 
       @media (width < calc(600 / 16 * 1rem)) {
@@ -122,6 +123,47 @@
         color: var(--secondary-color);
         font-size: 20px;
         cursor: pointer;
+      }
+    }
+
+    .topnav__links {
+      @media (width < calc(600 / 16 * 1rem)) {
+        display: none;
+      }
+    }
+
+    .topnav__hamburger-list {
+      display: none;
+
+      @media (width < calc(600 / 16 * 1rem)) {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw; /* Adjust the width of your slide-out drawer here */
+        height: 100vh; /* Fills the entire screen height */
+        background-color: #000000; /* Change this to your site's menu background color */
+        z-index: 1000;
+
+        /* transform: translateX(100%);
+
+        transition: transform 0.3s ease-in-out; */
+
+        .topnav__link {
+          display: block;
+        }
+      }
+
+      &.hidden {
+        display: none;
+
+        @media (width < calc(600 / 16 * 1rem)) {
+          display: block;
+          transform: translateX(100%); /* Pushes it away to the right */
+
+          /* Optional: Keeps it hidden from keyboard screen-readers when closed */
+          pointer-events: none;
+        }
       }
     }
 
@@ -136,12 +178,6 @@
       }
     }
 
-    .topnav__links {
-      @media (width < calc(600 / 16 * 1rem)) {
-        display: none;
-      }
-    }
-
     .topnav__link {
       color: var(--secondary-color);
       text-decoration: none;
@@ -152,18 +188,6 @@
     .topnav__link:hover {
       background-color: var(--gray-color);
       color: var(--secondary-color);
-    }
-
-    .topnav__hamburger-list {
-      display: none;
-
-      @media (width < calc(600 / 16 * 1rem)) {
-        display: block;
-      }
-
-      .topnav__link {
-        display: block;
-      }
     }
   }
 

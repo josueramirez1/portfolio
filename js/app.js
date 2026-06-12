@@ -1,13 +1,15 @@
-const hamburgerBtn = document.querySelector(".hamburger");
-
-const hamburgerList = document.querySelector(".hamburger-list-container");
-
+const hamburgerBtn = document.querySelector(".topnav__hamburger");
+const hamburgerList = document.querySelector(".topnav__hamburger-list");
+const closeBtn = document.querySelector(".topnav__close");
 const buttons = document.querySelectorAll(".filter-btn");
-
 const cards = document.querySelectorAll(".work-card");
 
 hamburgerBtn.addEventListener("click", (e) => {
-  hamburgerList.classList.toggle("hidden");
+  hamburgerList.classList.remove("hidden");
+});
+
+closeBtn.addEventListener("click", (e) => {
+  hamburgerList.classList.add("hidden");
 });
 
 buttons.forEach((button) => {

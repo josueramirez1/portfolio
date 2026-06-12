@@ -18,7 +18,7 @@
           <button class="topnav__hamburger">☰</button>
           <h3 class="topnav__logo">Josue Ramirez</h3>
           <nav class="topnav__links">
-            <a href="./pages/contact.html" class="topnav__link">Contact</a>
+            <a href="#main-sect" class="topnav__link">Home</a>
             <a href="#work" class="topnav__link">Projects</a>
             <a
               class="topnav__link"
@@ -31,9 +31,16 @@
         </div>
       </div>
       <nav class="topnav__hamburger-list hidden">
+        <button class="topnav__close">X</button>
         <a href="#main-sect" class="topnav__link">Home</a>
         <a href="#work" class="topnav__link">Projects</a>
-        <a href="pages/contact.html" class="topnav__link">Contact</a>
+        <a
+          class="topnav__link"
+          href="./public/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Download Resume</a
+        >
       </nav>
     </header>
 
@@ -69,58 +76,36 @@
     <section class="skills-section">
       <h3 class="skills-title">Skills</h3>
       <div class="skills-container">
-        <p class="skills-description">
-          These are the core engineering areas I focus on when building web
-          applications (but not limited to).
-        </p>
         <div class="skills-categories">
           <div class="skills-category">
-            <h3>Frontend UI</h3>
+            <h3>Frontend</h3>
             <div class="skill-pills">
               <span class="skill-pill">HTML</span>
               <span class="skill-pill">CSS</span>
-              <span class="skill-pill">Responsive Design</span>
-              <span class="skill-pill">Flexbox</span>
-              <span class="skill-pill">CSS Grid</span>
-            </div>
-          </div>
-          <div class="skills-category">
-            <h3>React Architecture</h3>
-            <div class="skill-pills">
+              <span class="skill-pill">Javascript (ES6+)</span>
               <span class="skill-pill">React</span>
+              <span class="skill-pill">Responsive Design</span>
               <span class="skill-pill">Component Architecture</span>
-              <span class="skill-pill">Reusable Components</span>
-              <span class="skill-pill">React Hooks</span>
-            </div>
-          </div>
-
-          <div class="skills-category">
-            <h3>API Integration</h3>
-            <div class="skill-pills">
-              <span class="skill-pill">REST APIs</span>
-              <span class="skill-pill">Async / Await</span>
-              <span class="skill-pill">Fetch API</span>
-              <span class="skill-pill">JSON Data</span>
             </div>
           </div>
           <div class="skills-category">
-            <h3>Backend Integration</h3>
+            <h3>Backend & Tools</h3>
             <div class="skill-pills">
+              <span class="skill-pill">REST APIs & Async JSON</span>
+              <span class="skill-pill">Git / GitHub</span>
+              <span class="skill-pill">Netlify</span>
               <span class="skill-pill">Supabase</span>
               <span class="skill-pill">Appwrite</span>
-              <span class="skill-pill">Authentication</span>
-              <span class="skill-pill">Database CRUD</span>
             </div>
           </div>
 
           <div class="skills-category">
-            <h3>Tools</h3>
+            <h3>Accessibility & Domain</h3>
             <div class="skill-pills">
-              <span class="skill-pill">Git</span>
-              <span class="skill-pill">GitHub</span>
-              <span class="skill-pill">VS Code</span>
-              <span class="skill-pill">DevTools</span>
-              <span class="skill-pill">Netlify</span>
+              <span class="skill-pill">Web Accessibility (a11y)</span>
+              <span class="skill-pill">Semantic HTML</span>
+              <span class="skill-pill">K-12 Domain Expertise</span>
+              <span class="skill-pill">User-Centric Design</span>
             </div>
           </div>
         </div>
@@ -131,22 +116,6 @@
         <h3>Projects</h3>
       </div>
 
-      <div class="filter-buttons">
-        <p class="filter-intro">Browse by Area</p>
-        <br />
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="frontend">Frontend UI</button>
-        <button class="filter-btn" data-filter="react">
-          React Architecture
-        </button>
-        <button class="filter-btn" data-filter="api">API Integration</button>
-        <button class="filter-btn" data-filter="interactive">
-          Interactive Apps
-        </button>
-        <button class="filter-btn" data-filter="backend_integration">
-          Backend Integration
-        </button>
-      </div>
       <div class="work-card-container">
         <div
           class="work-card react"
@@ -233,34 +202,7 @@
             >
           </div>
         </div>
-        <div class="work-card js" data-category="frontend interactive api">
-          <div class="work-top">
-            <a
-              href="https://josueramirez1.github.io/js-css-html-kan/"
-              target="_blank"
-            >
-              <img
-                class="work-img"
-                src="./img/kanban.png"
-                alt="Screenshot of Kanban board"
-              />
-            </a>
-          </div>
-          <div class="work-text">
-            <h3 class="work-title">Kanban Board</h3>
-            <p class="project-tags">Frontend • Interactive</p>
-            <p class="work-description">
-              A place to organize tasks to complete as well as add new ones and
-              delete old ones.
-            </p>
-            <a
-              class="source-code"
-              href="https://github.com/josueramirez1/js-css-html-kan"
-              target="_blank"
-              >View source code</a
-            >
-          </div>
-        </div>
+
         <div class="work-card react" data-category="react api">
           <div class="work-top">
             <a
