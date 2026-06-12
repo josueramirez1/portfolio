@@ -3,40 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script
       src="https://kit.fontawesome.com/852a4f6fd4.js"
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/app.js"></script>
+    <script defer src="./js/app.js"></script>
     <title>Josue Ramirez</title>
   </head>
   <body>
-    <nav>
-      <div class="nav-container">
-        <div class="menu-container">
-          <button class="hamburger">☰</button>
-          <h3>Josue Ramirez</h3>
-          <div class="nav-links">
-            <a href="pages/contact.html" class="nav-link">Contact</a>
-            <a href="#work" class="nav-link">Projects</a>
+    <header class="topnav">
+      <div class="wrapper topnav__wrapper">
+        <div class="topnav__menu">
+          <button class="topnav__hamburger">☰</button>
+          <h3 class="topnav__logo">Josue Ramirez</h3>
+          <nav class="topnav__links">
+            <a href="./pages/contact.html" class="topnav__link">Contact</a>
+            <a href="#work" class="topnav__link">Projects</a>
             <a
-              class="nav-link"
-              href="../src/public/resume.pdf"
+              class="topnav__link"
+              href="../public/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               >Download Resume</a
             >
-          </div>
+          </nav>
         </div>
       </div>
-      <div class="hamburger-list-container hidden">
-        <a href="#main-sect" class="nav-link">Home</a>
-        <a href="#work" class="nav-link">Projects</a>
-        <a href="pages/contact.html" class="nav-link">Contact</a>
-      </div>
-    </nav>
+      <nav class="topnav__hamburger-list hidden">
+        <a href="#main-sect" class="topnav__link">Home</a>
+        <a href="#work" class="topnav__link">Projects</a>
+        <a href="pages/contact.html" class="topnav__link">Contact</a>
+      </nav>
+    </header>
 
     <div class="socials">
       <a target="_blank" href="https://www.linkedin.com/in/josue67ramirez/">
@@ -47,19 +46,24 @@
       </a>
     </div>
 
-    <section id="main-sect" class="main-section">
-      <img
-        class="headshot"
-        src="../src/img/avatar.jpeg"
-        alt="author headshot"
-      />
-      <div class="introduction">
-        <h1>Hi, I'm Josue</h1>
-        <h2>
-          I build web applications with a focus on scalable architecture,
-          component-driven UI, and clean, maintainable code.
-        </h2>
-        <div class="bounce"><i class="arrow"></i></div>
+    <section class="hero">
+      <div class="wrapper hero__wrapper">
+        <div class="hero__content">
+          <div class="hero__introduction">
+            <h1 class="hero__title">Hi, I'm Josue</h1>
+            <p>
+              I'm a special education teacher working in web development. I have
+              a passion for creating web applications that improve the quality
+              of life for students and adults.
+            </p>
+            <div class="bounce"><i class="arrow"></i></div>
+          </div>
+          <img
+            class="hero__headshot"
+            src="./img/hero.jpg"
+            alt="author headshot"
+          />
+        </div>
       </div>
     </section>
     <section class="skills-section">
@@ -67,9 +71,7 @@
       <div class="skills-container">
         <p class="skills-description">
           These are the core engineering areas I focus on when building web
-          applications (but not limited to). Each category corresponds to
-          projects that demonstrate these skills and that I decided to be the
-          best fit.
+          applications (but not limited to).
         </p>
         <div class="skills-categories">
           <div class="skills-category">
@@ -127,11 +129,6 @@
     <section class="work-section" id="work">
       <div class="work-sub-title">
         <h3>Projects</h3>
-        <p>
-          Click on image to view demo. Some projects are made to develop my
-          skills and have been done as part of a course that I took and now I
-          can build it on my own. Credit is in description.
-        </p>
       </div>
 
       <div class="filter-buttons">
@@ -159,7 +156,7 @@
             <a href="https://josue-seis.netlify.app/" target="_blank">
               <img
                 class="work-img"
-                src="img/seis_clone.png"
+                src="./img/seis_clone.png"
                 alt="Screenshot of Seis clone web app"
               />
             </a>
@@ -187,7 +184,7 @@
             <a href="https://josue-kanban.netlify.app/" target="_blank">
               <img
                 class="work-img"
-                src="img/upscaler_photo.png"
+                src="./img/upscaler_photo.png"
                 alt="Screenshot of Upscaler web app"
               />
             </a>
@@ -207,150 +204,6 @@
             >
           </div>
         </div>
-        <div class="work-card js" data-category="api frontend">
-          <div class="work-top">
-            <a
-              href="https://josueramirez1.github.io/randomRonAsync-Await/"
-              target="_blank"
-            >
-              <img
-                class="work-img"
-                src="img/randomRon.png"
-                alt="Screenshot of Random Ron web app"
-              />
-            </a>
-          </div>
-          <div class="work-text">
-            <h3 class="work-title">Random Ron</h3>
-            <p class="project-tags">API • Frontend</p>
-            <p class="work-description">
-              Unique quotes from our beloved Parks and Rec. character, Ron
-              Swanson, fetched from API. Project from Go Make Things by Chris
-              Ferdinandi
-            </p>
-            <a
-              class="source-code"
-              href="https://github.com/josueramirez1/randomRonAsync-Await"
-              target="_blank"
-              >View source code</a
-            >
-          </div>
-        </div>
-        <div class="work-card js" data-category="interactive frontend">
-          <div class="work-top">
-            <a
-              href="https://josueramirez1.github.io/monsterGame/"
-              target="_blank"
-            >
-              <img
-                class="work-img"
-                src="img/monsters.png"
-                alt="Screenshot of Monster Game web app"
-              />
-            </a>
-          </div>
-          <div class="work-text">
-            <h3 class="work-title">Monster Game</h3>
-            <p class="project-tags">Frontend • Interactive</p>
-            <p class="work-description">
-              Click on the door to find the monster but be careful! Find the
-              wrong door and you'll be in for a surprise. Project from Go Make
-              Things by Chris Ferdinandi
-            </p>
-            <a
-              class="source-code"
-              href="https://github.com/josueramirez1/monsterGame"
-              target="_blank"
-              >View source code</a
-            >
-          </div>
-        </div>
-        <div class="work-card js" data-category="api frontend">
-          <div class="work-top">
-            <a
-              href="https://josueramirez1.github.io/js-css-html-random-pokemon-generator/"
-              target="_blank"
-            >
-              <img
-                class="work-img"
-                src="img/pokemon.png"
-                alt="Screenshot of Pokemon API app"
-              />
-            </a>
-          </div>
-          <div class="work-text">
-            <h3 class="work-title">Pokemon API</h3>
-            <p class="project-tags">API • Frontend</p>
-            <p class="work-description">
-              A webpage dedicated to the incredible franchise that is Pokemon.
-              Can you find your favorite Pokemon? Original project was Beer API
-              from Ania Kubow but I reworked it to use Pokemon instead.
-            </p>
-            <a
-              class="source-code"
-              href="https://github.com/josueramirez1/js-css-html-random-pokemon-generator"
-              target="_blank"
-              >View source code</a
-            >
-          </div>
-        </div>
-        <div class="work-card js" data-category="frontend interactive">
-          <div class="work-top">
-            <a
-              href="https://josueramirez1.github.io/js-css-html-unit-converter/"
-              target="_blank"
-            >
-              <img
-                class="work-img"
-                src="img/convert.png"
-                alt="Screenshot of Converter app"
-              />
-            </a>
-          </div>
-          <div class="work-text">
-            <h3 class="work-title">Unit Converter</h3>
-            <p class="project-tags">Frontend • Interactive</p>
-            <p class="work-description">
-              Conversion app is used to help convert to different measurements
-              in science or math related projects. Project from Ania Kubow.
-            </p>
-            <a
-              class="source-code"
-              href="https://github.com/josueramirez1/js-css-html-unit-converter"
-              target="_blank"
-              >View source code</a
-            >
-          </div>
-        </div>
-        <div class="work-card js" data-category="interactive frontend">
-          <div class="work-top">
-            <a
-              href="https://josueramirez1.github.io/js-css-html-pomodoro-timer/"
-              target="_blank"
-            >
-              <img
-                class="work-img"
-                src="img/pomodoro.png"
-                alt="Screenshot of Pomodoro web app"
-              />
-            </a>
-          </div>
-          <div class="work-text">
-            <h3 class="work-title">Pomodoro Timer</h3>
-            <p class="project-tags">Frontend • Interactive</p>
-            <p class="work-description">
-              Students use this app to teach them the Pomodoro technique,
-              utilizing intervals to improve length of focus and study time.
-              Project from Ania Kubow.
-            </p>
-            <a
-              class="source-code"
-              href="https://github.com/josueramirez1/js-css-html-pomodoro-timer"
-              target="_blank"
-              >View source code</a
-            >
-          </div>
-        </div>
         <div class="work-card react" data-category="react api frontend">
           <div class="work-top">
             <a
@@ -359,7 +212,7 @@
             >
               <img
                 class="work-img"
-                src="img/travel.png"
+                src="./img/travel.png"
                 alt="Screenshot of Traventure app"
               />
             </a>
@@ -370,39 +223,11 @@
             <p class="work-description">
               A fully functional Travel App with authentication for users so
               they can add, update, edit and delete their own travel
-              destinations. Project from Ania Kubow.
+              destinations.
             </p>
             <a
               class="source-code"
               href="https://github.com/josueramirez1/react-travel-app/tree/main#"
-              target="_blank"
-              >View source code</a
-            >
-          </div>
-        </div>
-        <div class="work-card js" data-category="interactive api">
-          <div class="work-top">
-            <a
-              href="https://incredible-cat-d6cc49.netlify.app/"
-              target="_blank"
-            >
-              <img
-                class="work-img"
-                src="img/dream.png"
-                alt="Screenshot of Dream app"
-              />
-            </a>
-          </div>
-          <div class="work-text">
-            <h3 class="work-title">Image Generator</h3>
-            <p class="project-tags">Interactive • API</p>
-            <p class="work-description">
-              This Image Generator App works with OpenAI to create images based
-              on user input. Project from Fireship.
-            </p>
-            <a
-              class="source-code"
-              href="https://github.com/josueramirez1/dream"
               target="_blank"
               >View source code</a
             >
@@ -416,7 +241,7 @@
             >
               <img
                 class="work-img"
-                src="img/kanban.png"
+                src="./img/kanban.png"
                 alt="Screenshot of Kanban board"
               />
             </a>
@@ -426,7 +251,7 @@
             <p class="project-tags">Frontend • Interactive</p>
             <p class="work-description">
               A place to organize tasks to complete as well as add new ones and
-              delete old ones. Project from Ania Kubow.
+              delete old ones.
             </p>
             <a
               class="source-code"
@@ -444,7 +269,7 @@
             >
               <img
                 class="work-img"
-                src="img/movies.png"
+                src="./img/movies.png"
                 alt="Screenshot of Movie App"
               />
             </a>
@@ -454,8 +279,7 @@
             <p class="project-tags">React • API</p>
             <p class="work-description">
               A fun project using React and using appwrite database to determine
-              trending movies based on search. Project from JS Mastery by Adrian
-              Hajdin
+              trending movies based on search.
             </p>
             <a
               class="source-code"
